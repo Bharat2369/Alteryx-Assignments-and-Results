@@ -1,0 +1,621 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="103" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Automobile Sales data.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ORDERNUMBER" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+            <Field name="QUANTITYORDERED" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+            <Field name="PRICEEACH" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+            <Field name="ORDERLINENUMBER" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+            <Field name="SALES" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+            <Field name="ORDERDATE" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+            <Field name="DAYS_SINCE_LASTORDER" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+            <Field name="STATUS" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+            <Field name="PRODUCTLINE" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+            <Field name="MSRP" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+            <Field name="PRODUCTCODE" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+            <Field name="CUSTOMERNAME" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+            <Field name="PHONE" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+            <Field name="ADDRESSLINE1" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+            <Field name="CITY" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+            <Field name="POSTALCODE" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+            <Field name="COUNTRY" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+            <Field name="CONTACTLASTNAME" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+            <Field name="CONTACTFIRSTNAME" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+            <Field name="DEALSIZE" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Automobile Sales data.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="103" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ORDERNUMBER" selected="True" type="Int64" size="8" />
+            <SelectField field="QUANTITYORDERED" selected="True" type="Int32" size="4" />
+            <SelectField field="PRICEEACH" selected="True" type="Double" size="8" />
+            <SelectField field="ORDERLINENUMBER" selected="True" type="Int16" size="2" />
+            <SelectField field="SALES" selected="True" type="Double" size="8" />
+            <SelectField field="DAYS_SINCE_LASTORDER" selected="True" type="Int32" size="4" />
+            <SelectField field="MSRP" selected="True" type="Int32" size="4" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="246" y="103" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>ORDERDATE</InputFieldName>
+          <Language>English</Language>
+          <Format>dd/MM/yyyy</Format>
+          <OutputFieldName>Order Date</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert ORDERDATE From:
+dd/MM/yyyy</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="342" y="103" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ORDERNUMBER" selected="False" />
+            <SelectField field="QUANTITYORDERED" selected="True" />
+            <SelectField field="PRICEEACH" selected="True" />
+            <SelectField field="ORDERLINENUMBER" selected="True" />
+            <SelectField field="SALES" selected="True" />
+            <SelectField field="Order Date" selected="False" />
+            <SelectField field="ORDERDATE" selected="False" />
+            <SelectField field="DAYS_SINCE_LASTORDER" selected="True" />
+            <SelectField field="STATUS" selected="False" />
+            <SelectField field="PRODUCTLINE" selected="True" />
+            <SelectField field="MSRP" selected="False" />
+            <SelectField field="PRODUCTCODE" selected="False" />
+            <SelectField field="CUSTOMERNAME" selected="False" />
+            <SelectField field="PHONE" selected="False" />
+            <SelectField field="ADDRESSLINE1" selected="False" />
+            <SelectField field="CITY" selected="False" />
+            <SelectField field="POSTALCODE" selected="False" />
+            <SelectField field="COUNTRY" selected="False" />
+            <SelectField field="CONTACTLASTNAME" selected="False" />
+            <SelectField field="CONTACTFIRSTNAME" selected="False" />
+            <SelectField field="DEALSIZE" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="605" y="245" width="241" height="205" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Model Development</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Model Development</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="16">
+          <GuiSettings>
+            <Position x="630" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="do target">True</Value>
+              <Value name="target">SALES</Value>
+              <Value name="target level" />
+              <Value name="use fields">"QUANTITYORDERED","PRICEEACH","ORDERLINENUMBER","DAYS_SINCE_LASTORDER","PRODUCTLINE","DEALSIZE"</Value>
+              <Value name="Pearson">True</Value>
+              <Value name="Spearman">False</Value>
+              <Value name="Hoeffding">False</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Association_Analysis.yxmc" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="762" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_20980_265d01711df54157bf4c09a0599e7bf2_\Engine_20980_4c2ef2d6a3472c4f936bf9df4b413b8e~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="762" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_20980_265d01711df54157bf4c09a0599e7bf2_\Engine_20980_db43c91d6c487a40b0f21de28ccfef3e~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="677" y="78" width="171" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Joining columns</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Joining columns</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="702" y="127" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="True">
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_PRODUCTLINE" selected="False" input="Left_" />
+                    <SelectField field="Left_DEALSIZE" selected="False" input="Left_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="857" y="54" width="265" height="277" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Linear regression</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Linear regression</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="9">
+          <GuiSettings Plugin="Linear_Regression">
+            <Position x="882" y="151" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="curPage">Home</Value>
+              <Value name="curTab">advanced</Value>
+              <Value name="standardize_pred">True</Value>
+              <Value name="internal_cv">True</Value>
+              <Value name="display_graphs">True</Value>
+              <Value name="set_seed_internal_cv">True</Value>
+              <Value name="set_seed_external_cv">True</Value>
+              <Value name="lambda_1se">True</Value>
+              <Value name="lambda_min">False</Value>
+              <Value name="Model Name">Linear_Regression_9</Value>
+              <Value name="Y Var">SALES</Value>
+              <Value name="X Vars">QUANTITYORDERED,PRICEEACH,ORDERLINENUMBER,DAYS_SINCE_LASTORDER,PRODUCTLINE,DEALSIZE</Value>
+              <Value name="Omit Constant">False</Value>
+              <Value name="Use Weights">False</Value>
+              <Value name="Weight Vec" />
+              <Value name="regularization">False</Value>
+              <Value name="alpha">0.5</Value>
+              <Value name="nfolds">5</Value>
+              <Value name="lambda">lambda_1se</Value>
+              <Value name="seed_internal_cv">1</Value>
+              <Value name="lambda_no_cv">0.5</Value>
+              <Value name="external_cv">False</Value>
+              <Value name="nfolds_external">5</Value>
+              <Value name="numberTrials">3</Value>
+              <Value name="external_seed_value">1</Value>
+              <Value name="graph.resolution">1x</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Linear_Regression_9</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" EngineDll="Macro" EngineDllEntryPoint="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1038" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_20980_265d01711df54157bf4c09a0599e7bf2_\Engine_20980_ffc2a100c84b6148a6dd3c8c01249402~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1038" y="175" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_20980_265d01711df54157bf4c09a0599e7bf2_\Engine_20980_82ee88d9d0e16947aca9ae99dde43643~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1026" y="247" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_20980_265d01711df54157bf4c09a0599e7bf2_\Engine_20980_42cc80fc10723149bcfff09d5d9ecd62~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>TB</ViewMode>
+                <ViewSize value="78" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints />
+                </View2>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="449" y="78" width="194" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Converting variables</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Converting variables</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="474" y="127" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="PRODUCTLINE" selected="True" />
+                <SelectField field="DEALSIZE" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="JupyterCode">
+            <Position x="546" y="127" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <WorkflowName>c:\users\dogra\onedrive\desktop\aut\bas 2\assignment 2\question 2 linear regression.yxmd</WorkflowName>
+              <JupyterProduction>false</JupyterProduction>
+              <vEnvName>designerbasetools_venv</vEnvName>
+              <DefaultVenv>1</DefaultVenv>
+              <productionModeScript />
+              <Port>50198</Port>
+              <JupyterGuidDir>0cf631ba7933fad480a8a20ba950d07a</JupyterGuidDir>
+              <JupyterGuidCopy />
+              <LastExecutedByEngineVersion>2024.1.1.71</LastExecutedByEngineVersion>
+              <Notebook><![CDATA[{"cells":[{"cell_type":"markdown","metadata":{"ayx":{"cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","contents_keyword":"Alteryx.help()","label":"info"}},"source":["Run `Alteryx.help()` for info about useful functions.  \n","i.e., `Alteryx.read(\"#1\")`, `Alteryx.write(df,1)`, `Alteryx.getWorkflowConstant(\"Engine.WorkflowDirectory\")`"]},{"cell_type":"code","execution_count":1,"metadata":{"ayx":{"cell_css":"border: 1px solid #58a; margin: 2px;","contents_keyword":"installPackages","label":"deps"},"execution":{"iopub.execute_input":"2024-08-31T05:21:27.019583Z","iopub.status.busy":"2024-08-31T05:21:27.019583Z","iopub.status.idle":"2024-08-31T05:21:27.053576Z","shell.execute_reply":"2024-08-31T05:21:27.051642Z"}},"outputs":[],"source":["# List all non-standard packages to be imported by your \n","# script here (only missing packages will be installed)\n","from ayx import Package\n","#Package.installPackages(['pandas','numpy'])"]},{"cell_type":"code","execution_count":2,"metadata":{"execution":{"iopub.execute_input":"2024-08-31T05:21:27.058380Z","iopub.status.busy":"2024-08-31T05:21:27.058380Z","iopub.status.idle":"2024-08-31T05:21:30.166845Z","shell.execute_reply":"2024-08-31T05:21:30.165775Z"}},"outputs":[],"source":["from ayx import Alteryx\n","\n","import pandas as pd\n","\n","from sklearn.preprocessing import LabelEncoder\n","\n"," \n","\n","# Read the data from the input anchor #1\n","\n","df = Alteryx.read(\"#1\")\n","\n"," \n","\n","# Instantiate a LabelEncoder\n","\n","le = LabelEncoder()\n","\n"," \n","\n","# Apply LabelEncoder to multiple columns\n","\n","columns_to_encode = ['PRODUCTLINE', 'DEALSIZE']\n","\n"," \n","\n","# Loop through each column and encode\n","\n","for column in columns_to_encode:\n","\n","    df[column] = le.fit_transform(df[column])\n","\n"," \n","\n","# Write the entire DataFrame back to the output anchor #1\n","\n","Alteryx.write(df, 1)\n"]}],"metadata":{"kernelspec":{"display_name":"designerbasetools_venv","language":"python","name":"designerbasetools_venv"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.10.13"}},"nbformat":4,"nbformat_minor":2}]]></Notebook>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output1">
+              <RecordInfo>
+                <Field name="PRODUCTLINE" source="PythonTool:" type="Int32" />
+                <Field name="DEALSIZE" source="PythonTool:" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxJupyterPluginEngine.dll" EngineDllEntryPoint="AlteryxJupyter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="8" Connection="Left" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="7" Connection="Output1" />
+      <Destination ToolID="8" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Correlation Matrix" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="8" Connection="Join" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="8" Connection="Join" />
+      <Destination ToolID="16" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Reports" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Interactive Report" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Question 2 linear regression</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="a408fdb0-3c47-4e6b-a74e-b118435dd0df" />
+      <Telemetry>
+        <PreviousWorkflowId value="f6c6414e-3a3b-4604-bb25-e9bb9c6c3192" />
+        <OriginWorkflowId value="14aba517-26c9-4026-8d7d-e7bc93aadf35" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

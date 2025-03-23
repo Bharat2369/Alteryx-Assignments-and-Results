@@ -1,0 +1,1747 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Quality of wine dataset.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Quality of wine dataset.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="fixed acidity" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Quality of wine dataset.csv" type="V_String" />
+            <Field name="volatile acidity" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Quality of wine dataset.csv" type="V_String" />
+            <Field name="citric acid" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Quality of wine dataset.csv" type="V_String" />
+            <Field name="residual sugar" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Quality of wine dataset.csv" type="V_String" />
+            <Field name="chlorides" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Quality of wine dataset.csv" type="V_String" />
+            <Field name="free sulfur dioxide" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Quality of wine dataset.csv" type="V_String" />
+            <Field name="total sulfur dioxide" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Quality of wine dataset.csv" type="V_String" />
+            <Field name="density" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Quality of wine dataset.csv" type="V_String" />
+            <Field name="pH" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Quality of wine dataset.csv" type="V_String" />
+            <Field name="sulphates" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Quality of wine dataset.csv" type="V_String" />
+            <Field name="alcohol" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Quality of wine dataset.csv" type="V_String" />
+            <Field name="quality" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Quality of wine dataset.csv" type="V_String" />
+            <Field name="quality2" size="254" source="File: C:\Users\dogra\OneDrive\Desktop\AUT\BAS 2\Assignment 2\Quality of wine dataset.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="102" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="fixed acidity" selected="True" type="Double" size="8" />
+            <SelectField field="volatile acidity" selected="True" type="Double" size="8" />
+            <SelectField field="citric acid" selected="True" type="Double" size="8" />
+            <SelectField field="residual sugar" selected="True" type="Double" size="8" />
+            <SelectField field="chlorides" selected="True" type="Double" size="8" />
+            <SelectField field="free sulfur dioxide" selected="True" type="Double" size="8" />
+            <SelectField field="total sulfur dioxide" selected="True" type="Double" size="8" />
+            <SelectField field="density" selected="True" type="Double" size="8" />
+            <SelectField field="pH" selected="True" type="Double" size="8" />
+            <SelectField field="sulphates" selected="True" type="Double" size="8" />
+            <SelectField field="alcohol" selected="True" type="Double" size="8" />
+            <SelectField field="quality" selected="True" type="Int32" size="4" />
+            <SelectField field="quality2" selected="True" rename="Quality classification" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings>
+        <Position x="294" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="estimation pct">34</Value>
+          <Value name="validation pct">33</Value>
+          <Value name="rand seed">1</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="186" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [quality] &gt;=6 THEN &quot;Yes&quot; Else &quot;No&quot; endif " field="Quality Yes or No" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Quality Yes or No = IF [quality] >=6 THEN "Yes" Else "No" endif 
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="378" y="343" width="253" height="193" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Linear Regression</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Linear Regression</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="4">
+          <GuiSettings Plugin="Linear_Regression">
+            <Position x="403" y="404" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="curPage">Customize</Value>
+              <Value name="curTab">advanced</Value>
+              <Value name="standardize_pred">True</Value>
+              <Value name="internal_cv">True</Value>
+              <Value name="display_graphs">True</Value>
+              <Value name="set_seed_internal_cv">True</Value>
+              <Value name="set_seed_external_cv">True</Value>
+              <Value name="lambda_1se">True</Value>
+              <Value name="lambda_min">False</Value>
+              <Value name="Model Name">Linear_Regression_4</Value>
+              <Value name="Y Var">quality</Value>
+              <Value name="X Vars">fixed acidity,volatile acidity,citric acid,residual sugar,chlorides,free sulfur dioxide,total sulfur dioxide,density,pH,sulphates,alcohol</Value>
+              <Value name="Omit Constant">False</Value>
+              <Value name="Use Weights">False</Value>
+              <Value name="Weight Vec" />
+              <Value name="regularization">False</Value>
+              <Value name="alpha">0.5</Value>
+              <Value name="nfolds">5</Value>
+              <Value name="lambda">lambda_1se</Value>
+              <Value name="seed_internal_cv">1</Value>
+              <Value name="lambda_no_cv">0.5</Value>
+              <Value name="external_cv">False</Value>
+              <Value name="nfolds_external">5</Value>
+              <Value name="numberTrials">3</Value>
+              <Value name="external_seed_value">1</Value>
+              <Value name="graph.resolution">1x</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Linear_Regression_4</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" EngineDll="Macro" EngineDllEntryPoint="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="535" y="392" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_983498931bef81439cf487e2995546a6~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="547" y="452" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_3d91b2ab9f0c5140ac74dec4d267e84d~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="331" width="273" height="217" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Association analysis for correlation</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Association analysis for correlation</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="53">
+          <GuiSettings>
+            <Position x="79" y="416" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="do target">True</Value>
+              <Value name="target">quality</Value>
+              <Value name="target level" />
+              <Value name="use fields">"fixed acidity","volatile acidity","citric acid","residual sugar","chlorides","free sulfur dioxide","density","pH","sulphates","alcohol"</Value>
+              <Value name="Pearson">True</Value>
+              <Value name="Spearman">False</Value>
+              <Value name="Hoeffding">False</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Association_Analysis.yxmc" />
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="199" y="380" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_245eee66fc314e4eb1e19c8218bcef65~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="199" y="464" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_2ec4cecdf5aeac4f8b04da7745b346d5~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="977" y="53" width="243" height="205" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Neural Network classification</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Neural Network classification</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1122" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_65f2a0ef02b97a4cb8887cb354009ab4~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1122" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_700bd9fbe44f804f8297df5a989bae42~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings>
+            <Position x="1002" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="model.name">Neural Network</Value>
+              <Value name="select.target">Quality Yes or No</Value>
+              <Value name="select.predictors">fixed acidity=True,volatile acidity=True,citric acid=True,residual sugar=True,chlorides=True,free sulfur dioxide=True,total sulfur dioxide=True,density=True,pH=True,sulphates=True,alcohol=True,quality=False,Quality classification=False,Quality Yes or No=False</Value>
+              <Value name="use.weights">False</Value>
+              <Value name="select.weights">fixed acidity</Value>
+              <Value name="num.nodes">10</Value>
+              <Value name="marginal.plots">True</Value>
+              <Value name="custom.scaling">False</Value>
+              <Value name="scale.type">z-score</Value>
+              <Value name="decay">0.100</Value>
+              <Value name="range">0.700</Value>
+              <Value name="max.wts">1000</Value>
+              <Value name="max.iter">100</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Neural_Network.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1241" y="379" width="458" height="241" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Model comparison for all regression models</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Model comparison for all regression models</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1615" y="428" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_e69c3baef94fff4db945e829af732cd0~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1615" y="476" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_8aecf3a60094404fa1e9624863767bf8~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1615" y="536" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_bdbbfa97bcf33047972ad349d8ffec8f~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1266" y="451" width="309" height="133" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Union regresssion and model comparison</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Union regresssion and model comparison</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="37">
+              <GuiSettings>
+                <Position x="1411" y="500" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Value name="target.level" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="error_measures">
+                  <RecordInfo>
+                    <Field name="Model" size="1073741823" source="R-DATA:" type="V_WString" />
+                    <Field name="Correlation" source="R-DATA:" type="Double" />
+                    <Field name="RMSE" source="R-DATA:" type="Double" />
+                    <Field name="MAE" source="R-DATA:" type="Double" />
+                    <Field name="MPE" source="R-DATA:" type="Double" />
+                    <Field name="MAPE" source="R-DATA:" type="Double" />
+                  </RecordInfo>
+                </MetaInfo>
+                <MetaInfo connection="predictions">
+                  <RecordInfo>
+                    <Field name="Actual" source="R-DATA:" type="Int32" />
+                    <Field name="Linear_Regression_4" source="R-DATA:" type="Double" />
+                    <Field name="SCM_model_regression" source="R-DATA:" type="Double" />
+                    <Field name="Decision_Tree_46" source="R-DATA:" type="Double" />
+                  </RecordInfo>
+                </MetaInfo>
+                <MetaInfo connection="Report">
+                  <RecordInfo>
+                    <Field name="Group" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+                    <Field name="Layout" size="1073741823" source="Report:Layout:" type="V_WString" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings Macro="Predictive Tools\Model Comparison.yxmc" />
+            </Node>
+            <Node ToolID="38">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+                <Position x="1291" y="500" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <ByName_ErrorMode>Warning</ByName_ErrorMode>
+                  <ByName_OutputMode>All</ByName_OutputMode>
+                  <Mode>ByName</Mode>
+                  <SetOutputOrder value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="942" y="331" width="229" height="253" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Decision Tree Regression</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Decision Tree Regression</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="46">
+          <GuiSettings Plugin="Decision_Tree">
+            <Position x="967" y="392" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="curPage">Home</Value>
+              <Value name="curTab">model</Value>
+              <Value name="curToggle">toggle-main</Value>
+              <Value name="display.static">True</Value>
+              <Value name="set_seed_cv">True</Value>
+              <Value name="showClassificationCV">False</Value>
+              <Value name="showWhenTreePlotAvailable">True</Value>
+              <Value name="showWhenAlgorithmAvailable">False</Value>
+              <Value name="use.gini">True</Value>
+              <Value name="use.information">False</Value>
+              <Value name="usesurrogate.0">True</Value>
+              <Value name="usesurrogate.1">False</Value>
+              <Value name="usesurrogate.2">False</Value>
+              <Value name="total.correct">True</Value>
+              <Value name="percent.correct">False</Value>
+              <Value name="model_type">regression</Value>
+              <Value name="auto">False</Value>
+              <Value name="classification">False</Value>
+              <Value name="regression">True</Value>
+              <Value name="tree_summary">Counts</Value>
+              <Value name="Counts">True</Value>
+              <Value name="Proportions">False</Value>
+              <Value name="tree_plot_size">tree.inches</Value>
+              <Value name="tree.inches">True</Value>
+              <Value name="tree.centimeters">False</Value>
+              <Value name="pruning_plot_size">prune.inches</Value>
+              <Value name="prune.inches">True</Value>
+              <Value name="prune.centimeters">False</Value>
+              <Value name="Model Name">Decision_Tree_46</Value>
+              <Value name="Y Var">quality</Value>
+              <Value name="X Vars">fixed acidity,volatile acidity,citric acid,residual sugar,chlorides,free sulfur dioxide,total sulfur dioxide,density,pH,sulphates,alcohol</Value>
+              <Value name="model.algorithm">rpart</Value>
+              <Value name="posClass">
+              </Value>
+              <Value name="use.weights">False</Value>
+              <Value name="select.weights" />
+              <Value name="splitting_criteria">use.gini</Value>
+              <Value name="surrogate_use">usesurrogate.0</Value>
+              <Value name="surrogate_split_criteria">total.correct</Value>
+              <Value name="min.split">20</Value>
+              <Value name="min.bucket">7</Value>
+              <Value name="xval.folds">10</Value>
+              <Value name="max.depth">20</Value>
+              <Value name="max.bins">
+              </Value>
+              <Value name="set_cp">False</Value>
+              <Value name="cp">0</Value>
+              <Value name="rules">False</Value>
+              <Value name="bands_check">False</Value>
+              <Value name="bands">10</Value>
+              <Value name="subset">False</Value>
+              <Value name="winnow">False</Value>
+              <Value name="GlobalPruning">False</Value>
+              <Value name="fuzzyThreshold">False</Value>
+              <Value name="earlyStopping">False</Value>
+              <Value name="trials">1</Value>
+              <Value name="CF">0.25</Value>
+              <Value name="minCases">2</Value>
+              <Value name="sample">0</Value>
+              <Value name="seed">1</Value>
+              <Value name="use_cv">False</Value>
+              <Value name="numberFolds">5</Value>
+              <Value name="numberTrials">3</Value>
+              <Value name="stratified">False</Value>
+              <Value name="cv_seed">1</Value>
+              <Value name="tree.plot">False</Value>
+              <Value name="Branch Dist">False</Value>
+              <Value name="tree.in.w">5.5</Value>
+              <Value name="tree.in.h">5.5</Value>
+              <Value name="tree.cm.w">13</Value>
+              <Value name="tree.cm.h">14.95</Value>
+              <Value name="tree.graph.resolution">1x</Value>
+              <Value name="tree.pointsize">8</Value>
+              <Value name="prune.plot">False</Value>
+              <Value name="prune.in.w">5.5</Value>
+              <Value name="prune.in.h">5.5</Value>
+              <Value name="prune.cm.w">13</Value>
+              <Value name="prune.cm.h">14.95</Value>
+              <Value name="prune.graph.resolution">1x</Value>
+              <Value name="prune.pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Decision_Tree_46</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Decision_Tree/Supporting_Macros/Decision_Tree.yxmc" EngineDll="Macro" EngineDllEntryPoint="Decision_Tree/Supporting_Macros/Decision_Tree.yxmc" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1087" y="380" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_ff3fd585f3e4ce4d820412b42b610bcd~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1087" y="440" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_87b4cd58f24afa48aaa7a15d9945179e~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1087" y="500" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_d08bc1027777164facef1597987f54f8~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="654" y="343" width="241" height="181" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>SVM - Regression</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>SVM - Regression</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="39">
+          <GuiSettings>
+            <Position x="679" y="416" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="model.name">SCM_model regression</Value>
+              <Value name="select.target">quality</Value>
+              <Value name="select.predictors">fixed acidity=True,volatile acidity=True,citric acid=True,residual sugar=True,chlorides=True,free sulfur dioxide=True,total sulfur dioxide=True,density=True,pH=True,sulphates=True,alcohol=True,quality=True,Quality classification=False</Value>
+              <Value name="type.classification">False</Value>
+              <Value name="class.c">True</Value>
+              <Value name="class.nu">False</Value>
+              <Value name="nu_nu">0.05</Value>
+              <Value name="type.regression">True</Value>
+              <Value name="reg.eps">True</Value>
+              <Value name="reg.nu">False</Value>
+              <Value name="reg.nu_nu">0.05</Value>
+              <Value name="model.cust">False</Value>
+              <Value name="user.define">True</Value>
+              <Value name="kernel.linear">False</Value>
+              <Value name="linear.cost">1.00</Value>
+              <Value name="kernel.polynomial">False</Value>
+              <Value name="poly.cost">1.00</Value>
+              <Value name="poly.degree">2.000</Value>
+              <Value name="poly.gamma">1.00000</Value>
+              <Value name="poly.coef0">1.00</Value>
+              <Value name="kernel.radial">True</Value>
+              <Value name="rad.cost">1.00</Value>
+              <Value name="rad.gamma">1.00000</Value>
+              <Value name="kernel.sigmoid">False</Value>
+              <Value name="sigmoid.cost">1.00</Value>
+              <Value name="sigmoid.gamma">1.00000</Value>
+              <Value name="sigmoid.coef0">1.00</Value>
+              <Value name="grid.search">False</Value>
+              <Value name="gs.number">5</Value>
+              <Value name="gs.linear">False</Value>
+              <Value name="gs.linear.cost_min">1.00</Value>
+              <Value name="gs.linear.cost_max">1.00</Value>
+              <Value name="gs.polynomial">False</Value>
+              <Value name="gs.poly.cost_min">1.00</Value>
+              <Value name="gs.poly.cost_max">1.00</Value>
+              <Value name="gs.poly.degree_min">2.000</Value>
+              <Value name="gs.poly.degree_max">2.000</Value>
+              <Value name="gs.poly.gamma_min">1.00000</Value>
+              <Value name="gs.poly.gamma_max">1.00000</Value>
+              <Value name="gs.poly.coef0_min">1.00</Value>
+              <Value name="gs.poly.coef0_max">1.00</Value>
+              <Value name="gs.radial">True</Value>
+              <Value name="gs.radial.cost_min">1.00</Value>
+              <Value name="gs.radial.cost_max">1.00</Value>
+              <Value name="gs.radial.gamma_min">1.00000</Value>
+              <Value name="gs.radial.gamma_max">1.00000</Value>
+              <Value name="gs.sigmoid">False</Value>
+              <Value name="gs.sigmoid.cost_min">1.00</Value>
+              <Value name="gs.sigmoid.cost_max">1.00</Value>
+              <Value name="gs.sigmoid.gamma_min">1.00000</Value>
+              <Value name="gs.sigmoid.gamma_max">1.00000</Value>
+              <Value name="gs.sigmoid.coef0_min">1.00</Value>
+              <Value name="gs.sigmoid.coef0_max">1.00</Value>
+              <Value name="seed">1</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\SVM_v2.yxmc" />
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="811" y="392" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_bd3202f0c8ef00408340a821d33e9283~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="811" y="440" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_2400014def79ba409563120d2f4fa808~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1265" y="54" width="410" height="314" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Model Comparison fo classification models</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Model Comparison fo classification models</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1591" y="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_c99c337a8841fb4688771bc60c7b9941~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1579" y="212" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_af17ddb3f8a5a6458c5b333e8f983c44~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1567" y="284" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_c559f3942ab4c94697df3fa539db31b7~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1290" y="103" width="241" height="157" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Union &amp; model comparison</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Union &amp; model comparison</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="27">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+                <Position x="1315" y="176" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <ByName_ErrorMode>Warning</ByName_ErrorMode>
+                  <ByName_OutputMode>All</ByName_OutputMode>
+                  <Mode>ByName</Mode>
+                  <SetOutputOrder value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+            </Node>
+            <Node ToolID="34">
+              <GuiSettings>
+                <Position x="1447" y="152" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Value name="target.level" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="predictions">
+                  <RecordInfo>
+                    <Field name="Actual" size="1073741823" source="R-DATA:" type="V_WString" />
+                    <Field name="Decision_Tree_36" size="1073741823" source="R-DATA:" type="V_WString" />
+                    <Field name="Neural Network" size="1073741823" source="R-DATA:" type="V_WString" />
+                    <Field name="SVM_Model" size="1073741823" source="R-DATA:" type="V_WString" />
+                  </RecordInfo>
+                </MetaInfo>
+                <MetaInfo connection="error_measures">
+                  <RecordInfo>
+                    <Field name="Model" size="1073741823" source="R-DATA:" type="V_WString" />
+                    <Field name="Accuracy" source="R-DATA:" type="Double" />
+                    <Field name="Accuracy_No" source="R-DATA:" type="Double" />
+                    <Field name="Accuracy_Yes" source="R-DATA:" type="Double" />
+                    <Field name="F1" source="R-DATA:" type="Double" />
+                    <Field name="AUC" source="R-DATA:" type="Double" />
+                  </RecordInfo>
+                </MetaInfo>
+                <MetaInfo connection="Report">
+                  <RecordInfo>
+                    <Field name="Group" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+                    <Field name="Layout" size="1073741823" source="Report:Layout:" type="V_WString" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings Macro="Predictive Tools\Model Comparison.yxmc" />
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="654" y="55" width="290" height="205" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Support Vector Machine Classification</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Support Vector Machine Classification</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="13">
+          <GuiSettings>
+            <Position x="679" y="115" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="model.name">SVM_Model</Value>
+              <Value name="select.target">Quality Yes or No</Value>
+              <Value name="select.predictors">fixed acidity=True,volatile acidity=True,citric acid=True,residual sugar=True,chlorides=True,free sulfur dioxide=True,total sulfur dioxide=True,density=True,pH=True,sulphates=True,alcohol=True,quality=False,Quality classification=False,Quality Yes or No=False</Value>
+              <Value name="type.classification">True</Value>
+              <Value name="class.c">True</Value>
+              <Value name="class.nu">False</Value>
+              <Value name="nu_nu">0.05</Value>
+              <Value name="type.regression">False</Value>
+              <Value name="reg.eps">True</Value>
+              <Value name="reg.nu">False</Value>
+              <Value name="reg.nu_nu">0.05</Value>
+              <Value name="model.cust">False</Value>
+              <Value name="user.define">True</Value>
+              <Value name="kernel.linear">False</Value>
+              <Value name="linear.cost">1.00</Value>
+              <Value name="kernel.polynomial">False</Value>
+              <Value name="poly.cost">1.00</Value>
+              <Value name="poly.degree">2.000</Value>
+              <Value name="poly.gamma">1.00000</Value>
+              <Value name="poly.coef0">1.00</Value>
+              <Value name="kernel.radial">True</Value>
+              <Value name="rad.cost">1.00</Value>
+              <Value name="rad.gamma">1.00000</Value>
+              <Value name="kernel.sigmoid">False</Value>
+              <Value name="sigmoid.cost">1.00</Value>
+              <Value name="sigmoid.gamma">1.00000</Value>
+              <Value name="sigmoid.coef0">1.00</Value>
+              <Value name="grid.search">False</Value>
+              <Value name="gs.number">5</Value>
+              <Value name="gs.linear">False</Value>
+              <Value name="gs.linear.cost_min">1.00</Value>
+              <Value name="gs.linear.cost_max">1.00</Value>
+              <Value name="gs.polynomial">False</Value>
+              <Value name="gs.poly.cost_min">1.00</Value>
+              <Value name="gs.poly.cost_max">1.00</Value>
+              <Value name="gs.poly.degree_min">2.000</Value>
+              <Value name="gs.poly.degree_max">2.000</Value>
+              <Value name="gs.poly.gamma_min">1.00000</Value>
+              <Value name="gs.poly.gamma_max">1.00000</Value>
+              <Value name="gs.poly.coef0_min">1.00</Value>
+              <Value name="gs.poly.coef0_max">1.00</Value>
+              <Value name="gs.radial">True</Value>
+              <Value name="gs.radial.cost_min">1.00</Value>
+              <Value name="gs.radial.cost_max">1.00</Value>
+              <Value name="gs.radial.gamma_min">1.00000</Value>
+              <Value name="gs.radial.gamma_max">1.00000</Value>
+              <Value name="gs.sigmoid">False</Value>
+              <Value name="gs.sigmoid.cost_min">1.00</Value>
+              <Value name="gs.sigmoid.cost_max">1.00</Value>
+              <Value name="gs.sigmoid.gamma_min">1.00000</Value>
+              <Value name="gs.sigmoid.gamma_max">1.00000</Value>
+              <Value name="gs.sigmoid.coef0_min">1.00</Value>
+              <Value name="gs.sigmoid.coef0_max">1.00</Value>
+              <Value name="seed">1</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\SVM_v2.yxmc" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="799" y="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_ec1a2b8546ace84c88ea364ed9deb131~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="799" y="176" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_6555507d69595f4791eff586319fffa6~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="378" y="55" width="241" height="253" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Decision tree classification</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Decision tree classification</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="523" y="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_e3d695e175ef62499d8aeda37840ada0~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="523" y="224" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_ec9fb1f6f04a754085a341a87785a206~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="Decision_Tree">
+            <Position x="403" y="164" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="curPage">Home</Value>
+              <Value name="curTab">model</Value>
+              <Value name="curToggle">toggle-main</Value>
+              <Value name="display.static">True</Value>
+              <Value name="set_seed_cv">True</Value>
+              <Value name="showClassificationCV">True</Value>
+              <Value name="showWhenTreePlotAvailable">True</Value>
+              <Value name="showWhenAlgorithmAvailable">True</Value>
+              <Value name="use.gini">True</Value>
+              <Value name="use.information">False</Value>
+              <Value name="usesurrogate.0">True</Value>
+              <Value name="usesurrogate.1">False</Value>
+              <Value name="usesurrogate.2">False</Value>
+              <Value name="total.correct">True</Value>
+              <Value name="percent.correct">False</Value>
+              <Value name="model_type">classification</Value>
+              <Value name="auto">False</Value>
+              <Value name="classification">True</Value>
+              <Value name="regression">False</Value>
+              <Value name="tree_summary">Counts</Value>
+              <Value name="Counts">True</Value>
+              <Value name="Proportions">False</Value>
+              <Value name="tree_plot_size">tree.inches</Value>
+              <Value name="tree.inches">True</Value>
+              <Value name="tree.centimeters">False</Value>
+              <Value name="pruning_plot_size">prune.inches</Value>
+              <Value name="prune.inches">True</Value>
+              <Value name="prune.centimeters">False</Value>
+              <Value name="Model Name">Decision_Tree_36</Value>
+              <Value name="Y Var">Quality Yes or No</Value>
+              <Value name="X Vars">fixed acidity,volatile acidity,citric acid,residual sugar,chlorides,free sulfur dioxide,total sulfur dioxide,density,pH,sulphates,alcohol</Value>
+              <Value name="model.algorithm">rpart</Value>
+              <Value name="posClass">
+              </Value>
+              <Value name="use.weights">False</Value>
+              <Value name="select.weights" />
+              <Value name="splitting_criteria">use.gini</Value>
+              <Value name="surrogate_use">usesurrogate.0</Value>
+              <Value name="surrogate_split_criteria">total.correct</Value>
+              <Value name="min.split">20</Value>
+              <Value name="min.bucket">7</Value>
+              <Value name="xval.folds">10</Value>
+              <Value name="max.depth">20</Value>
+              <Value name="max.bins">
+              </Value>
+              <Value name="set_cp">False</Value>
+              <Value name="cp">0</Value>
+              <Value name="rules">False</Value>
+              <Value name="bands_check">False</Value>
+              <Value name="bands">10</Value>
+              <Value name="subset">False</Value>
+              <Value name="winnow">False</Value>
+              <Value name="GlobalPruning">False</Value>
+              <Value name="fuzzyThreshold">False</Value>
+              <Value name="earlyStopping">False</Value>
+              <Value name="trials">1</Value>
+              <Value name="CF">0.25</Value>
+              <Value name="minCases">2</Value>
+              <Value name="sample">0</Value>
+              <Value name="seed">1</Value>
+              <Value name="use_cv">False</Value>
+              <Value name="numberFolds">5</Value>
+              <Value name="numberTrials">3</Value>
+              <Value name="stratified">False</Value>
+              <Value name="cv_seed">1</Value>
+              <Value name="tree.plot">False</Value>
+              <Value name="Branch Dist">False</Value>
+              <Value name="tree.in.w">5.5</Value>
+              <Value name="tree.in.h">5.5</Value>
+              <Value name="tree.cm.w">13</Value>
+              <Value name="tree.cm.h">14.95</Value>
+              <Value name="tree.graph.resolution">1x</Value>
+              <Value name="tree.pointsize">8</Value>
+              <Value name="prune.plot">False</Value>
+              <Value name="prune.in.w">5.5</Value>
+              <Value name="prune.in.h">5.5</Value>
+              <Value name="prune.cm.w">13</Value>
+              <Value name="prune.cm.h">14.95</Value>
+              <Value name="prune.graph.resolution">1x</Value>
+              <Value name="prune.pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Decision_Tree_36</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Decision_Tree/Supporting_Macros/Decision_Tree.yxmc" EngineDll="Macro" EngineDllEntryPoint="Decision_Tree/Supporting_Macros/Decision_Tree.yxmc" />
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="535" y="164" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dogra\AppData\Local\Temp\Alteryx\Engine_5012_aea936f944bb43218a663531b0c419be_\Engine_5012_ee833570d3620f41a0eaed99e4d4f4ce~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="53" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="8" Connection="Estimation" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="8" Connection="Estimation" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="8" Connection="Validation" />
+      <Destination ToolID="34" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="34" Connection="Models" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="8" Connection="Estimation" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="8" Connection="Estimation" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="8" Connection="Validation" />
+      <Destination ToolID="37" Connection="Data" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="37" Connection="Models" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="8" Connection="Estimation" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="8" Connection="Estimation" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection name="#3" Wireless="True">
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="39" Connection="Object" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="4" Connection="Reports" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="4" Connection="Interactive Report" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Correlation Matrix" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="17" Connection="Report" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection name="#3" Wireless="True">
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection name="#4" Wireless="True">
+      <Origin ToolID="13" Connection="Object" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="error_measures" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="predictions" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Report" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Interactive" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Reports" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="39" Connection="Object" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="39" Connection="Report" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="error_measures" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="predictions" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Report" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="13" Connection="Object" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="13" Connection="Report" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="36" Connection="Interactive" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="36" Connection="Reports" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Question 4</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="c77cfaa5-212c-4291-a6b1-440008d43b1b" />
+      <Telemetry>
+        <PreviousWorkflowId value="d4749078-efc8-4c28-a525-488b6c0636ae" />
+        <OriginWorkflowId value="2ebde2bf-645d-48fd-a7e8-853e336c6550" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
